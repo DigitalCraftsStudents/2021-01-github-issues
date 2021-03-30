@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid rgb(194 194 194)
+}
+
+.nav a {
+  margin: 0 10px;
+}
+
+.nav a.active {
+  color: red;
+}
