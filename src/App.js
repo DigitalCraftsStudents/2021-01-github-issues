@@ -3,7 +3,6 @@ import './App.css';
 import IssueDetail from './pages/IssueDetail';
 import IssueList from './pages/IssueList';
 import IssuesByLabel from './pages/IssuesByLabel';
-import Users from './pages/Users';
 
 function App() {
 
@@ -11,7 +10,6 @@ function App() {
     <div className="App">
       <ul class="nav">
         <li><NavLink exact to="/">Issues</NavLink></li>
-        <li><NavLink to="/users">User Search</NavLink></li>
       </ul>
       <div>
         <Switch>
@@ -23,9 +21,6 @@ function App() {
           </Route>
           <Route path="/labels/:name">
             <IssuesByLabel />
-          </Route>
-          <Route path="/users">
-            <Users />
           </Route>
           <Route>
             <Redirect to="/" />
